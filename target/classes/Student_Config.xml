@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--this is our first  bean-->
+    <bean class="org.example.beans.Student" name="student1">
+        <property name="studentId">
+            <value>223</value>
+        </property>
+        <property name="studentName">
+            <value>Abhijeet</value>
+        </property>
+        <property name="studentAddress">
+            <value>ashti</value>
+        </property>
+    </bean>
+
+<!--this is our second bean by we cannot use value as a tag we use value as a attribute   -->
+    <bean class="org.example.beans.Student" name="student2">
+        <property name="studentId" value="34" />
+        <property name="studentName" value="Kiran" />
+        <property name="studentAddress" value="Beed" />
+    </bean>
+
+
+</beans>

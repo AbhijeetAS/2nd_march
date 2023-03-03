@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean class="org.example.referance.First" name="FirstRef">
+        <property name="num1" >
+            <value>23</value>
+        </property>
+    </bean>
+
+    <bean class="org.example.referance.Second" name="SecondRef">
+        <property name="num2">
+            <value>20</value>
+        </property>
+        <property name="ob">
+            <ref bean="FirstRef"></ref>
+        </property>
+    </bean>
+</beans>

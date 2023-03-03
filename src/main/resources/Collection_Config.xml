@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--third bean COLLECTIONS BEAN    -->
+    <bean class="org.example.beans.Collection" name="list1">
+        <property name="name" value="radhe"/>
+        <property name="Id">
+            <set>
+                <value>1</value>
+                <value>2</value>
+                <value>3</value>
+            </set>
+        </property>
+        <property name="phones" >
+            <list>
+                <value>77754675</value>
+                <value>9158170083</value>
+            </list>
+        </property>
+        <property name="courses">
+            <map>
+                <entry key="java" value="2month"></entry>
+                <entry key="python" value="1 months"></entry>
+            </map>
+        </property>
+    </bean>
+</beans>
